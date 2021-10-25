@@ -3,16 +3,53 @@
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 2;
-    
+    grid-template-areas: 
+    "compteur bonus" 
+    "cookie   bonus" 
+    "display  bonus"; 
+
+    grid-gap: 20px;
 }
 
-.clicker {
-    width: 20%;
-    height: auto;
-
-}
-
+/* affichage du score total */
 #counter{
     font-size: 3rem;
+    
+    grid-area: compteur;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* bouton avec le cookie */
+#clicker {
+    width: 20%;
+    height: auto;
+    
+    /* oligatoire pour que le bouton se met au centre avec justify content */
+    margin: 0 auto;
+
+    grid-area: cookie;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clicker:hover{
+    transform: scale(1.25);
+}
+
+
+/* affichage du multiplicateur */
+#multiplicateur{
+    font-size: 5rem;
+
+    grid-area: display;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* tous les boost que le joueur peut avoir */
+#boost {
+    grid-area: bonus;
 }

@@ -12,11 +12,39 @@
 </head>
 <body>
     <div class="container">
-        <div id="counter">
-            0
-        </div>
+        <!-- affichage total de cookie -->
+        <div id="counter">Cookies : 0</div>
+
+        <!-- bouton cookie -->
         <input type="image" src="img/cookie.png" id="clicker" value="no comment">
+
+        <!-- multiplicateur que le joueur a -->
+        <div id="display">
+            <div id="multiplicateur">Boost : 1</div>
+        </div>
+
+        <!-- à droite, liste de tous les bonus que peut acheter le joueur -->
+        <div id="boost">
+            <h2>booster x2</h2>
+            <p id="prix-1">prix : 10</p>
+            <input type="button" id="boost-1" value="boost +1">
+
+            <hr>
+
+            <h2>Auto-click</h2>
+            <p id="prix_auto_click">prix : 50</p>
+            <input type="button" id="auto-click" value="auto click">
+
+            <hr>
+
+            <h2>CLICK BOOST</h2>
+            <p>prix : 200</p>
+            <input type="button" id="click-boost">
+
+        </div>
+        
     </div>
+
 
 
 
