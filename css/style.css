@@ -4,19 +4,20 @@
 
     display: grid;
     grid-template-areas: 
-    "compteur bonus" 
-    "cookie   bonus" 
-    "display  bonus"; 
+    "left bonus";
 
     grid-gap: 20px;
+}
+
+/* colonne gauche */
+#affichage{
+    grid-area: left;
 }
 
 /* affichage du score total */
 #counter{
     font-size: 3rem;
     
-    grid-area: compteur;
-
     display: flex;
     justify-content: center;
 }
@@ -29,7 +30,6 @@
     /* oligatoire pour que le bouton se met au centre avec justify content */
     margin: 0 auto;
 
-    grid-area: cookie;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +43,12 @@
 #multiplicateur{
     font-size: 5rem;
 
-    grid-area: display;
     display: flex;
     justify-content: center;
 
 }
 
-/* tous les boost que le joueur peut avoir */
+/* colonne droite ,tous les boost que le joueur peut avoir */
 #boost {
     grid-area: bonus;
 }
